@@ -1,0 +1,11 @@
+Quantity,Value
+Strain–Load slope (µε/N),85.88
+Strain–Deflection slope (µε/m),65600.0
+Gauge position Xg (m),0.02286
+Prescribed disp. point L1 (m),0.254
+Load point L2 (m),0.2841625
+Thickness t (m),0.0032004
+Width b (m),0.026034999999999996
+Moment of inertia I (m^4),7.111956983928551e-11
+Elastic modulus E (Pa),68459965189.654655
+Effective stiffness EI (N·m^2),4.868843275500699
