@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 def southwell_strain_plot(filename, title, output_plot, L_in, h_in):
     df = pd.read_csv(filename)
 
-    # Correct bending strain definition, no scaling factor
+    # eps_bend calc
     df["eps_bend"] = abs((df["SG_Adapter_A_pct"] - df["SG_Adapter_B_pct"]) / 2) / 100
     df["eps_over_P"] = df["eps_bend"] / abs(df["Force_N"])
 
@@ -17,7 +17,7 @@ def southwell_strain_plot(filename, title, output_plot, L_in, h_in):
 
     L_m = L_in * 0.0254
     h_m = h_in * 0.0254
-    Pcr = m  # direct slope-based Pcr (the ~927 N one)
+    Pcr = m  #
 
     plt.figure(figsize=(7,5))
     plt.plot(x, y, 'ko', markersize=5, label="Data")
@@ -25,7 +25,7 @@ def southwell_strain_plot(filename, title, output_plot, L_in, h_in):
         x,
         y_fit,
         color='black',
-        linestyle=(0, (1, 2)),  # dashed fit line
+        linestyle=(0, (1, 2)),  
         linewidth=1.2,
         label=f"Fit: y={m:.3e}x+{b:.3e}\nR²={r2:.4f}\nPcr={Pcr:.2f} N"
     )

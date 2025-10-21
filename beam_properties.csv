@@ -7,5 +7,6 @@ Load point L2 (m),0.2841625
 Thickness t (m),0.0032004
 Width b (m),0.026034999999999996
 Moment of inertia I (m^4),7.111956983928551e-11
-Elastic modulus E (Pa),68459965189.654655
+Elastic modulus E (from mP) (Pa),68459965189.654655
+Elastic modulus E (from mD) (Pa),489558.69169885776
 Effective stiffness EI (N·m^2),4.868843275500699
